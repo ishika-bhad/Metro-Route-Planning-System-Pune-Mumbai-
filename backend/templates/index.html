@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Metro Guide</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <h1>Metro Guide</h1>
+
+    <div class="planner">
+      <label>City</label>
+      <select id="city">
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+      </select>
+
+      <select id="source"></select>
+      <select id="destination"></select>
+
+      <button id="findRoute">Find Route</button>
+    </div>
+
+    <div id="output" class="output-box">Select source and destination.</div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
