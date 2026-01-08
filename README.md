@@ -18,6 +18,7 @@ This project addresses these problems by modeling the transit network as a weigh
 | Data Model          | Graph (Stations as nodes, connections as weighted edges) |
 
 ## ⚙️ System Architecture
+```text
 User (Browser)
      ↓
 Frontend (HTML/CSS/JS)
@@ -27,6 +28,7 @@ FastAPI Backend
 C++ Routing Engine
      ↓
 Graph-based Route Computation
+```
 ## 🧠 Key Features
 - ✅ Multi-city support (Pune & Mumbai)
 
@@ -51,7 +53,7 @@ Graph-based Route Computation
 ## 🚀 Getting Started
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/metro-route-planner.git
+git clone https://github.com/ishika-bhad/Metro-Route-Planner-System-Pune-Mumbai-
 cd metro-route-planner
 ```
 ### 2️⃣ Backend Setup
@@ -66,18 +68,18 @@ Open index.html in your browser or serve it via a local server.
 ## 📁 Project Structure
 
 ```text
-├── backend/
-│   ├── main.py        # Backend entry point
-│   ├── routes.py     # API route definitions
-│   └── data/          # Data storage and resources
-│
 ├── core/
-│   └── route_engine.cpp  # Core logic (C++ route engine)
+│   ├── metro_graph.h
+│   ├── metro_graph.cpp
+│   └── metro_cli.cpp
 │
-├── frontend/
-│   ├── index.html     # Frontend HTML
-│   ├── style.css      # Styling (CSS)
-│   └── app.js         # Frontend logic (JavaScript)
+├── backend/
+│   ├── main.py
+│   ├── templates/
+│   │   └── index.html
+│   └── static/
+│       ├── app.js
+│       └── style.css
 │
 └── README.md          # Project documentation
 ```
